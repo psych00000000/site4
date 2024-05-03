@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="styles/fontello.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="styles\style.css">
     <title>Document</title>
 </head>
@@ -13,14 +14,27 @@
     <header class="header">
         <div class="container">
             <nav>
+                <ul class="menu_desktop">
+                    <li class="menu_item active"><a href="#">Home</a></li>
+                    <li class="menu_item"><a href="#about">About us</a></li>
+                    <li class="menu_item"><a href="#team">Team</a></li>
+                    <li class="menu_item"><a href="#"><img class="logo" src="images/logo.png" alt=""></a></li>
+                    <li class="menu_item"><a href="#services">Services</a></li>
+                    <li class="menu_item"><a href="#">Blog</a></li>
+                    <li class="menu_item"><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <nav class=" menu_mobile">
+                 <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+                 <div class="menu_burger"></div>
                 <ul class="menu">
                     <li class="menu_item active"><a href="#">Home</a></li>
-                    <li class="menu_item"><a href="#">About us</a></li>
-                    <li class="menu_item"><a href="#">Team</a></li>
-                    <li class="menu_item"><a href="#"><img class="logo" src="images/logo.png" alt=""></a></li>
-                    <li class="menu_item"><a href="#">Services</a></li>
+                    <li class="menu_item"><a href="#about">About us</a></li>
+                    <li class="menu_item"><a href="#team">Team</a></li>
+                    
+                    <li class="menu_item"><a href="#services">Services</a></li>
                     <li class="menu_item"><a href="#">Blog</a></li>
-                    <li class="menu_item"><a href="#">Contact us</a></li>
+                    <li class="menu_item"><a href="#contact">Contact us</a></li>
                 </ul>
             </nav>
             <div class="header_contect">
@@ -29,8 +43,8 @@
                 <a href="#" class="header_btn">read more</a>
             </div>
         </div>
-    </header>
-    <section class="about">
+    </header>    
+     <section class="about " id="about">
 
         <div class="container">
             <div class="about_grid">
@@ -64,7 +78,7 @@
 
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
 
             <h2 class="team_h2">This is our team</h2>
@@ -96,7 +110,7 @@
 
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="services_h2">We provide you everything</h2>
             <p class="services_title">Maybe not everything, but we provide you some stuff.</p>
@@ -119,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section class="contact_us">
+    <section class="contact_us" id="contact">
         <div class="container">
             <div class="contact_box">
             <h2 class="contact_h2">Contact Us</h2>
@@ -151,7 +165,8 @@
     </section>
     <footer>
         Copyright © Kenan Hamidic. All rights reserved.
-    </footer>
+    </footer> <!---->
+
 </body>
 
 </html>

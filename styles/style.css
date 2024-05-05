@@ -50,6 +50,7 @@
 body {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .container {
@@ -68,8 +69,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 207px;
+  list-style: none;
 }
 .menu_mobile {
+  
   display: none;
 }
 .menu_item a {
@@ -511,18 +514,37 @@ footer {
   .logo {
     margin-left: -16px;
   }
-  .menu_mobile {
+  
+  .menu_inner {
+   
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+
+ 
+  }
+  .menu_mobile {
+    display: flex; 
+    flex-direction: column;
   }
 
-  .menu {
+  .menu { 
+    
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
     display: none;
    
   }
+  .menu li {
+    padding: 5px 0;
+  }
+  .menu a{
+  
+    margin-right: 0;
+  }
   .menu_burger {
+    cursor: pointer;
     position: relative;
     width: 30px;
     height: 3px;

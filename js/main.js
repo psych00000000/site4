@@ -11,6 +11,6 @@ $ (document).ready(function() {
     })
     $('.menu_burger').click(function(){
         $('.menu').toggle(500);
-        return false;
+       
     })
 });
